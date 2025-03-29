@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Serenity IT Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+    };
+  </script>
+</head>
+<body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-6 py-4 shadow-md dark:shadow-gray-700">
+    <div class="flex items-center space-x-3">
+      <img src="assets/logo.png" alt="Company Logo" class="h-8 w-8 rounded-full">
+      <h1 class="text-xl font-bold">Serenity IT Solutions</h1>
+    </div>
+    <nav class="space-x-4">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="services.html" class="hover:underline">Services</a>
+      <a href="certifications.html" class="hover:underline">Certifications</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
+    </nav>
+    <button id="theme-toggle" class="ml-4 px-3 py-1 border rounded text-sm">Toggle Theme</button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-6 py-12 max-w-4xl mx-auto">
+    <section class="text-center">
+      <h2 class="text-3xl font-bold mb-4">Cloud-Native Networking & Data Solutions</h2>
+      <p class="mb-6 text-lg">End-to-end cloud and data engineering expertise to scale your infrastructure efficiently and cost-effectively.</p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow w-64">
+          <h3 class="font-semibold text-lg mb-2">Cloud Engineering</h3>
+          <p>Design and deploy scalable cloud infrastructure on AWS with cost optimization in mind.</p>
+        </div>
+        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow w-64">
+          <h3 class="font-semibold text-lg mb-2">Networking Solutions</h3>
+          <p>Custom VPC design, hybrid networking, and secure connectivity tailored to your business.</p>
+        </div>
+        <div class="bg-gray-100 dark:bg-gray-800 p-6 rounded-xl shadow w-64">
+          <h3 class="font-semibold text-lg mb-2">Data Engineering</h3>
+          <p>Build reliable data pipelines, storage, and reporting dashboards with certified professionals.</p>
+        </div>
+      </div>
+      <div class="mt-8">
+        <a href="contact.html" class="inline-block bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Get in Touch</a>
+      </div>
+    </section>
+
+    <!-- Certifications Preview -->
+    <section class="mt-16">
+      <h3 class="text-2xl font-semibold text-center mb-6">Cloud Certifications</h3>
+      <div class="flex flex-wrap justify-center gap-6">
+        <div class="text-center">
+          <img src="assets/aws-developer.jpeg" alt="AWS Developer Associate" class="h-24 mx-auto mb-2">
+          <p class="text-sm">AWS Developer Associate</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/aws-solutions.jpeg" alt="AWS Solutions Architect Associate" class="h-24 mx-auto mb-2">
+          <p class="text-sm">AWS Solutions Architect Associate</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/azure-data.jpeg" alt="Azure Data Engineer" class="h-24 mx-auto mb-2">
+          <p class="text-sm">Azure Data Engineer</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/azure-developer.jpeg" alt="Azure Developer Associate" class="h-24 mx-auto mb-2">
+          <p class="text-sm">Azure Developer Associate</p>
+        </div>
+        <div class="text-center">
+          <img src="assets/aws-practitioner.png" alt="AWS Cloud Practitioner" class="h-24 mx-auto mb-2">
+          <p class="text-sm">AWS Cloud Practitioner</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="px-6 py-6 text-center text-sm border-t dark:border-gray-700 mt-12">
+    &copy; 2025 Serenity IT Solutions. All rights reserved.
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
